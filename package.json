@@ -1,0 +1,22 @@
+{
+  "name": "sammwy-twitch-overlays",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "predeploy": "bun run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "devDependencies": {
+    "@types/tmi.js": "^1.8.6",
+    "gh-pages": "^6.3.0",
+    "typescript": "~5.9.3",
+    "vite": "^7.1.7"
+  },
+  "dependencies": {
+    "tmi.js": "^1.8.5"
+  }
+}
