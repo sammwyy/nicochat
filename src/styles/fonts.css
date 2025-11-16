@@ -1,14 +1,14 @@
 @font-face {
     font-family: Minecraft-Bold;
-    src: url("Minecraft-Bold.otf");
+    src: url("../Minecraft-Bold.otf");
 }
 
 @font-face {
     font-family: Minecraft-Regular;
-    src: url("Minecraft-Regular.otf");
+    src: url("../Minecraft-Regular.otf");
 }
 
 @font-face {
     font-family: Kusukusuame-Regular;
-    src: url("Kusukusuame-Regular.otf");
+    src: url("../Kusukusuame-Regular.otf");
 }
