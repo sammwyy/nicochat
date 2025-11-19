@@ -47,6 +47,14 @@ function getRandomY(): number {
 }
 
 function spawnMessage(author: string, authorColor: string | undefined, messageTokens: MessageToken[]) {
+  // Enforce maxMessages limit by removing oldest message if at limit
+  if (messageHistory.length >= settings.maxMessages) {
+    const oldestMessage = messageHistory.shift();
+    if (oldestMessage) {
+      oldestMessage.remove();
+    }
+  }
+
   const element = document.createElement("div");
   const usernameElement = document.createElement("span");
   const messageElement = document.createElement("span");
